@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Project</title>
+  <style>
+
+    body {
+      background-color: #050210;
+    }
+
+
+    @keyframes animation1 {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(1800deg);
+      }
+    }
+
+
+    @keyframes animation-3 {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(1800deg);
+      }
+    }
+    @keyframes animation-4 {
+      0% {
+      width: 200px;
+      height:200px;
+      transform: scale(0.5);
+}
+100%{
+  transform: scale(1.76);
+}
+}
+
+    #container {
+      width: 1000px;
+      height: 800px;
+      padding-left: 715px;
+    }
+
+    .circle-1 {
+      width: 460px;
+      height: 460px;
+      background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+      border-radius: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 130px;
+      position: absolute; 
+      animation-name: animation1;
+      animation-duration: 8s; 
+      animation-timing-function: linear; 
+      animation-delay: 0s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-play-state: running; 
+    }
+    .circle-2 {
+      width: 380px;
+      height: 380px;
+      background-color: #050210;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: 170px;
+      margin-left: 40px;
+      
+    }
+
+    .circle-3 {
+      width: 520px;
+      height: 520px;
+      background: linear-gradient( #fb5bab7c,#55fba07c,#b87aff7c);
+      filter: blur(50px);
+      border-radius: 100%;
+      position: absolute;
+      margin-left: -32px;
+      margin-top: 100px;
+      animation-name: animation-3;
+      animation-duration: 8s; 
+      animation-timing-function: linear; 
+      animation-delay: 0s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-play-state: running; 
+
+
+    }
+    
+    .circle-4 {
+      width: 200px;
+      height: 200px;
+      background-color: #09041f;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: 260px;
+      margin-left: 130px;
+      animation-name: animation-4;
+      animation-duration: 0.8s;
+      animation-timing-function: linear;
+      animation-direction: normal;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+
+    }
+
+    </style>
+
+</head>
+<body>
+  <div id="container">
+    <div class="circle-3"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-4"></div>
+</div>
+
+
+</body>
+</html>
